@@ -1,0 +1,22 @@
+{
+  "name": "@fabric-ds/core",
+  "description": "Shared logic for the JS implementations of Fabric Design System",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    "breadcrumbs": "./dist/breadcrumbs"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"no tests\"",
+    "preversion": "npm run test && npm run build",
+    "postversion": "npm publish && git push --follow-tags"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}
