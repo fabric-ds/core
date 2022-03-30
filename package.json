@@ -1,11 +1,18 @@
 {
   "name": "@fabric-ds/core",
+  "types": "module",
   "description": "Shared business logic for JS implementations of Fabric Design System",
   "version": "0.0.1",
   "type": "module",
   "exports": {
-    "breadcrumbs": "./dist/breadcrumbs"
+    "breadcrumbs": {
+      "import": "./dist/breadcrumbs/index.js",
+      "types": "./dist/breadcrumbs/index.d.ts"
+    }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "echo \"no tests\"",
@@ -16,6 +23,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "typescript": "^4.6.2"
   }
