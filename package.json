@@ -1,7 +1,7 @@
 {
   "name": "@fabric-ds/core",
-  "description": "Shared logic for the JS implementations of Fabric Design System",
-  "version": "0.0.1",
+  "description": "Shared business logic for JS implementations of Fabric Design System",
+  "version": "0.0.0",
   "type": "module",
   "exports": {
     "breadcrumbs": "./dist/breadcrumbs"
