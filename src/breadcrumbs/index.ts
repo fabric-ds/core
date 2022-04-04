@@ -4,6 +4,6 @@
  * @param separator Element to be interleaved between each item
  * @returns
  */
-export function interleave(array: any, separator: any) {
-  return array.flatMap((el: unknown) => [el, separator]).slice(0, -1);
+export function interleave<T, K>(array: T[], separator: K): (T | K)[] {
+  return array.flatMap((el: T) => [el, separator]).slice(0, -1);
 }
