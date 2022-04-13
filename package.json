@@ -1,13 +1,20 @@
 {
   "name": "@fabric-ds/core",
-  "types": "module",
   "description": "Shared business logic for JS implementations of Fabric Design System",
   "version": "0.0.2",
   "type": "module",
   "exports": {
-    "breadcrumbs": {
-      "import": "./dist/breadcrumbs/index.js",
-      "types": "./dist/breadcrumbs/index.d.ts"
+    "./breadcrumbs": {
+      "import": "./dist/breadcrumbs/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "breadcrumbs": [
+        "./dist/breadcrumbs/index.d.ts"
+      ]
     }
   },
   "files": [
