@@ -4,7 +4,7 @@
   "version": "0.0.5",
   "type": "module",
   "exports": {
-    "./breadcrumbs": "./dist/breadcrumbs/index.js"
+    "./*": "./dist/*/index.js"
   },
   "typesVersions": {
     "*": {
