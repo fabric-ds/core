@@ -4,9 +4,7 @@
   "version": "0.0.5",
   "type": "module",
   "exports": {
-    "./breadcrumbs": {
-      "default": "./dist/breadcrumbs/index.js"
-    }
+    "./breadcrumbs": "./dist/breadcrumbs/index.js"
   },
   "typesVersions": {
     "*": {
@@ -26,7 +24,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {},
   "publishConfig": {
     "access": "public"
