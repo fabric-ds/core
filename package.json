@@ -5,7 +5,7 @@
   "type": "module",
   "exports": {
     "./breadcrumbs": {
-      "import": "./dist/breadcrumbs/index.js"
+      "default": "./dist/breadcrumbs/index.js"
     }
   },
   "typesVersions": {
