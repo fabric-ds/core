@@ -10,6 +10,9 @@
     "*": {
       "breadcrumbs": [
         "./dist/breadcrumbs/index.d.ts"
+      ],
+      "slider": [
+        "./dist/slider/index.d.ts"
       ]
     }
   },
