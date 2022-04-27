@@ -37,7 +37,7 @@ export function createHandlers({
   props: SliderProps;
   sliderState: SliderState;
 }) {
-  const clampedChange = (n: string) =>
+  const clampedChange = (n: number) =>
     clamp(n, { max: props.max, min: props.min });
 
   function getCoordinates(e: ClickEvent) {
