@@ -49,5 +49,7 @@ export function roundDecimals(n: number, decimals = 2) {
 }
 
 const isNumber = (e: string) => Number.isFinite(parseFloat(e));
-export const clamp = (v: string, { min, max }: { min: number; max: number }) =>
-  isNumber(v) ? Math.min(Math.max(Number(v), min), max) : min;
+export const clamp = (
+  v: string | number,
+  { min, max }: { min: number; max: number }
+) => (isNumber(v as string) ? Math.min(Math.max(Number(v), min), max) : min);
