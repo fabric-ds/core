@@ -1,4 +1,4 @@
-import { Dimensions } from "./handlers";
+import { Dimensions } from "./handlers.js";
 
 type UpdateDimensions = ({ left, width }: Dimensions) => void;
 
