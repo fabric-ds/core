@@ -16,9 +16,9 @@ interface SliderProps {
   min: number; // Default 0
   max: number; // Default 100
   step: number;
-  label: string;
-  labelledBy: string;
-  disabled: boolean;
+  disabled?: boolean;
+  label?: string;
+  labelledBy?: string;
 }
 
 interface SliderState {
@@ -27,7 +27,7 @@ interface SliderState {
   position: number;
   val: number;
   step: number;
-  thumbEl: HTMLElement;
+  thumbEl: HTMLDivElement | null;
 }
 
 export function createHandlers({
@@ -96,8 +96,8 @@ export function createHandlers({
     }
   }
 
-  function handleFocus(e: FocusEvent): void {}
-  function handleBlur(e: FocusEvent): void {}
+  function handleFocus(e: FocusEvent | unknown): void {}
+  function handleBlur(e: FocusEvent | unknown): void {}
 
   function handleMouseDown(e: KeyboardEvent) {
     sliderState.sliderPressed = true;
@@ -119,14 +119,14 @@ export function createHandlers({
     window.removeEventListener("mousemove", handleMouseChange);
   }
 
-  function handleClick(e: ClickEvent) {
+  function handleClick(e: ClickEvent | unknown) {
     handleMouseChange(e);
   }
 
-  function handleMouseChange(e: ClickEvent) {
-    const { value } = getCoordinates(e);
+  function handleMouseChange(e: ClickEvent | unknown) {
+    const { value } = getCoordinates(e as ClickEvent);
     const n = roundDecimals(value);
-    sliderState.thumbEl.focus();
+    sliderState.thumbEl?.focus();
     if (sliderState.position === n) return;
     sliderState.position = n;
   }

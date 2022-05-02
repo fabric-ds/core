@@ -14,7 +14,7 @@ export const useDimensions = () => {
     };
 
   const mountedHook = (
-    sliderLineEl: HTMLElement,
+    sliderLineEl: HTMLDivElement,
     updateDimensions: UpdateDimensions
   ) => {
     updateDimensions(sliderLineEl.getBoundingClientRect());
