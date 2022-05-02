@@ -4,7 +4,7 @@ import {
   eventOptions,
   clamp,
   roundDecimals,
-} from "./helpers";
+} from "./helpers.js";
 
 type ClickEvent = TouchEvent | MouseEvent;
 export type Dimensions = {
