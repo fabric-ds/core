@@ -13,6 +13,9 @@
       ],
       "slider": [
         "./dist/slider/index.d.ts"
+      ],
+      "attention": [
+        "./dist/attention/index.d.ts"
       ]
     }
   },
@@ -28,7 +31,9 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@floating-ui/dom": "^0.5.0"
+  },
   "publishConfig": {
     "access": "public"
   },
