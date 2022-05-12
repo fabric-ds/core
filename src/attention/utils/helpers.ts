@@ -28,10 +28,10 @@ export type AttentionState = {
   arrowEl: HTMLElement;
   attentionEl: HTMLDivElement;
   targetEl: HTMLDivElement;
-  TOP: Boolean;
-  RIGHT: Boolean;
-  BOTTOM: Boolean;
-  LEFT: Boolean;
+  top: Boolean;
+  right: Boolean;
+  bottom: Boolean;
+  left: Boolean;
   tooltip: Boolean;
   popover: Boolean;
   callout: Boolean;
