@@ -13,6 +13,12 @@ export const opposites = {
   [LEFT]: RIGHT,
   [RIGHT]: LEFT,
 };
+export const arrowLabels = {
+  [TOP]: "↑",
+  [BOTTOM]: "↓",
+  [LEFT]: "←",
+  [RIGHT]: "→",
+};
 export const directions = [TOP, BOTTOM, LEFT, RIGHT];
 export const rotation = {
   [LEFT]: -45,
