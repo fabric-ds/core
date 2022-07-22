@@ -82,7 +82,7 @@ export async function useRecompute(state: AttentionState) {
   );
   // @ts-ignore
   state.actualDirection = position.placement;
-  Object.assign(state.attentionEl?.style, {
+  Object.assign(state.attentionEl?.style || {}, {
     left: "0",
     top: "0",
     transform: `translate3d(${Math.round(position.x)}px, ${Math.round(

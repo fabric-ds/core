@@ -2,6 +2,9 @@ import { Dimensions } from "./handlers.js";
 
 type UpdateDimensions = ({ left, width }: Dimensions) => void;
 
+export type ElementType<T extends ReadonlyArray<unknown>> =
+  T extends ReadonlyArray<infer ElementType> ? ElementType : never;
+
 export const useDimensions = () => {
   let observer: ResizeObserver;
 

@@ -4,6 +4,7 @@ import {
   eventOptions,
   clamp,
   roundDecimals,
+  ElementType,
 } from "./helpers.js";
 
 type ClickEvent = TouchEvent | MouseEvent;
@@ -61,7 +62,8 @@ export function createHandlers({
   };
 
   function handleKeyDown(e: KeyboardEvent) {
-    const key = e.key;
+    const key = e.key as ElementType<typeof validKeyCodes>;
+
     if (!validKeyCodes.includes(key)) return;
     e.preventDefault();
     if (
